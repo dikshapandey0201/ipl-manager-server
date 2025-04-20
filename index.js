@@ -21,8 +21,6 @@ const app = express();
 app.use(cors({
   origin: 'https://ipl-manager-client.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
 }));
 app.use(bodyParser.json());
 app.use(cookieParser());
