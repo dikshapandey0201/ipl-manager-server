@@ -48,6 +48,7 @@ exports.loginUser = async (req, res) => {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
         maxAge: 24 * 60 * 60 * 1000,
+        sameSite: 'None'
       })
       .status(201)
       .json({ success: true, message: "Logged in successfully" });
