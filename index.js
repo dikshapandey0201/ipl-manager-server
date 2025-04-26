@@ -4,7 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const path = require('path');
-const fs = require('fs'); // ✅ ADD THIS LINE
+const fs = require('fs');
 
 dotenv.config();
 
